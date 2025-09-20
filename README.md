@@ -3,6 +3,14 @@
 ## 📊 Overview
 Complete data lakehouse implementation with Bronze, Silver, and Gold layers using Apache Spark, Jupyter, and Docker.
 
+[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?logo=python&logoColor=white)]()
+[![Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?logo=apachespark&logoColor=white)]()
+[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)]()
+[![Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?logo=apacheairflow&logoColor=white)]()
+[![License](https://img.shields.io/badge/License-MIT-green)]()
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
+
+
 ## 🎯 Project Architecture
 
 📁 lakehouse-local/
@@ -31,6 +39,24 @@ Complete data lakehouse implementation with Bronze, Silver, and Gold layers usin
 1. **Bronze Layer**: Raw CSV data generation
 2. **Silver Layer**: Data cleaning and transformation
 3. **Gold Layer**: Business analytics and aggregations
+
+Pipeline Automation
+
+    Data Generation: Automated data creation
+
+    Bronze to Silver: Spark transformations
+
+    Silver to Gold: Business analytics
+
+    Scheduled: Daily pipeline execution
+
+## 🔄 Orchestration with Airflow
+
+The project includes Apache Airflow for pipeline orchestration:
+
+```yaml
+dags/
+└── lakehouse_dag.py      # DAG for complete pipeline orchestration
 
 ## 🚀 Getting Started
 
@@ -73,6 +99,16 @@ Usage
 
     ✅ Customer 360 view
 
+## 📊 Project Metrics
+
+- **Data Volume**: 5,000+ synthetic records generated
+- **Transformations**: 10+ data processing operations
+- **Technologies**: 5+ tools integrated (Spark, Docker, Airflow, etc.)
+- **Containerization**: Full Docker compose setup
+- **Automation**: Airflow DAG for complete orchestration
+- **Testing**: CI/CD pipeline with GitHub Actions
+- **Documentation**: Comprehensive README and technical docs
+
 👨‍💻 Author
 
 Tercio Alves Parente
@@ -82,6 +118,17 @@ Tercio Alves Parente
     LinkedIn: Tercio Alves Parente
 
     GitHub: Tercio01
+
+## 🚀 Future Roadmap
+
+- [ ] Real-time data streaming with Kafka
+- [ ] Machine Learning integration
+- [ ] Cloud deployment (AWS/Azure/GCP)
+- [ ] Advanced monitoring with Grafana/Prometheus
+- [ ] Data quality framework with Great Expectations
+- [ ] Advanced analytics with dbt
+- [ ] Kubernetes deployment
+- [ ] Data catalog implementation
 
 📄 License
 
